@@ -1,0 +1,12 @@
+body {
+font-family: 'Poppins', sans-serif;
+}
+.green { color: #22c55e; }
+.red { color: #ef4444; }   
+.choice-btn {
+    transition: all 0.2s ease-in-out;
+}
+.choice-btn:hover {
+    transform: translateY(-5px);
+    background-color: #dbeafe; 
+}

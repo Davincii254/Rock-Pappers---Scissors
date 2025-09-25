@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+
+    <main class="bg-white p-6 sm:p-10 rounded-2xl shadow-xl max-w-2xl w-full text-center">
+
+        <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-8">Rock, Paper, Scissors</h1>
+
+        <div class="choices flex justify-center gap-4 sm:gap-8 mb-8">
+            <button onclick="playGame('rock')" class="choice-btn bg-slate-200 text-5xl sm:text-7xl rounded-full w-28 h-28 sm:w-36 sm:h-36 flex items-center justify-center">👊</button>
+            <button onclick="playGame('paper')" class="choice-btn bg-slate-200 text-5xl sm:text-7xl rounded-full w-28 h-28 sm:w-36 sm:h-36 flex items-center justify-center">✋</button>
+            <button onclick="playGame('scissors')" class="choice-btn bg-slate-200 text-5xl sm:text-7xl rounded-full w-28 h-28 sm:w-36 sm:h-36 flex items-center justify-center">✂️</button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xl font-semibold text-slate-600 mb-8">
+            <div id="playerDisplay" class="bg-slate-50 p-4 rounded-lg">PLAYER:</div>
+            <div id="computerDisplay" class="bg-slate-50 p-4 rounded-lg">COMPUTER:</div>
+        </div>
+
+        <div id="resultDisplay" class="text-4xl sm:text-5xl font-bold min-h-[60px] flex items-center justify-center mb-8">
+            Make your move!
+        </div>
+
+        <div class="score-section border-t border-slate-200 pt-6 flex justify-around text-lg">
+            <div class="scoreDisplay font-semibold text-slate-700">
+                Player Score:
+                <span id="playerScoreDisplay" class="font-bold text-2xl text-green-600 block">0</span>
+            </div>
+            <div class="scoreDisplay font-semibold text-slate-700">
+                Computer Score:
+                <span id="computerScoreDisplay" class="font-bold text-2xl text-red-600 block">0</span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
