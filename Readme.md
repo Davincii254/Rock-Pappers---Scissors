@@ -30,7 +30,7 @@ You only need a modern web browser such as:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Davincii254/Rock#
+   git clone https://github.com/Davincii254/Rock-Pappers---Scissors
    ```
 
 2. **Navigate to the project directory**
