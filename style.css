@@ -1,12 +1,30 @@
 body {
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.green { color: #22c55e; }
-.red { color: #ef4444; }   
+
+/* Color classes manipulated by JavaScript */
+.green { 
+    color: #16a34a; /* Tailwind green-600 equivalent */
+}
+
+.red { 
+    color: #dc2626; /* Tailwind red-600 equivalent */
+}   
+
+/* Button styles and animations */
 .choice-btn {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
+
 .choice-btn:hover {
-    transform: translateY(-5px);
-    background-color: #dbeafe; 
+    transform: translateY(-5px) scale(1.05);
+    background-color: #dbeafe; /* Tailwind blue-100 */
+    border-color: #bfdbfe; /* Tailwind blue-200 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.choice-btn:active {
+    transform: translateY(2px) scale(0.95);
+    box-shadow: none;
 }
