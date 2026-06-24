@@ -67,7 +67,7 @@ You only need a modern web browser such as:
 .
 ├── index.html      # Main HTML file (UI structure)
 ├── style.css       # Custom CSS for additional styling
-├── script.js       # JavaScript game logic
+├── script.js       # JavaScript game logic and how to install and play the game
 └── README.md       # Project documentation
 ```
 
